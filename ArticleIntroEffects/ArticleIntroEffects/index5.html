@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Inspiration for Article Intro Effects | Demo 5</title>
+		<meta name="description" content="Inspiration for Article Intro Effects" />
+		<meta name="keywords" content="title, header, effect, scroll, inspiration, medium, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body class="demo-5">
+	<style>
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  11.11%   { opacity: 1; }
+  33.33%  { opacity: 1; }
+  44.44%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.fadein { 
+    text-align: center;
+	position:relative;
+    width: auto;	
+	max-width: 600px; 
+	height: auto; 
+	padding-bottom: 500px;
+}
+.fadein img { 
+	position:absolute; 
+	left:0; 
+	right:0; 
+	opacity:0; 
+	animation-name: fade;
+	animation-duration: 27s; 
+	animation-iteration-count: infinite; 
+	width: auto;
+	max-width: 600px; 
+	height: auto; 
+	}
+.fadein img:nth-child(1) { 
+	animation-delay: 0s;  
+}
+.fadein img:nth-child(2) { 
+	animation-delay: 3s;  
+	}
+.fadein img:nth-child(3) { 
+	animation-delay: 6s;  
+}
+.fadein img:nth-child(4) { 
+	animation-delay: 9s;  
+}
+.fadein img:nth-child(5) { 
+	animation-delay: 12s;  
+	}
+.fadein img:nth-child(6) { 
+	animation-delay: 15s;  
+}
+.fadein img:nth-child(7) { 
+	animation-delay: 18s;  
+}
+.fadein img:nth-child(8) { 
+	animation-delay: 21s;  
+	}
+.fadein img:nth-child(9) { 
+	animation-delay: 24s;  
+}
+</style>
+		<div id="container" class="container intro-effect-sidefixed">
+			<!-- Top Navigation -->
+			<!-- <div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/SamsungGrid/"><span>Previous Demo</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19119"><span>Back to the Codrops Article</span></a></span>
+			</div> -->
+			<header class="header">
+				<div class="bg-img"><img src="img/5.jpg" alt="Background Image" /></div>
+			</header>
+			<button class="trigger" ><span>Trigger</span></button>
+			<article class="content">
+				<div class="title">
+					<h1>About the Author</h1>
+					<p class="subline">Matthew Clark</p>
+					<p>by <strong>Matthew Clark</strong> &#8212; Posted on <strong>September 6, 2016</strong></p>
+				</div>
+				<div>
+					<p>Matthew Clark, currently is a student at the Masters University. He is studing 
+					Computer Science in hopes of one day working on BCI and VR technology.</p>
+					<h3>Interests & Hobbies</h3>
+					<h4>Preface</h4>
+					<p>Throughout his 19 years on this earth he has learned many different practices and skills.
+					Yet all of those skills are nothing in comparison of learn the one everlasting truth of the Gospel. 
+					Therefore all of the following pursuits, originaly for the glory of matthew, 
+					will now be commited to the glory of our God in heaven.</p>
+					<h4>Chinese</h4>
+					<p>Beginning in High School Matthew began to study the Chinese language. After a few shortcomings in the classroom he found his stride in individual study and practice with his fellow Chinese friends. After two years of initial studying he commited to his first trip to China. He went to Xi'an on an exchange program with his local High School, Saugus High School. After relocationg to Mclean, Virginia with his family, He continued his study in and outside of the classroom. This lead to his second trip to China. Which included an initial tour of ShangHai and BeiJing with his family. Afterwhich he began to work as an English tutor untill he returned. His most recent trip also included visits to ShangHai and BeiJing, however; this trip served a different pourpose. He was there for the gospel's sake. This has had a life changing impact on his outlook on the future and what Chinese means to Matthew today.</p>
+					<h4>Photography</h4>
+					<p> Matthew loves photography. He has learned the art of both digital and darkroom photography and enjoys both. During his time in Virginia he especially enjoyed learning all the processes of developing large format pictures.</p>
+					<div class="fadein">
+						<img src="pics/001.jpg">
+						<img src="pics/002.jpg">
+						<img src="pics/023.jpg">
+						<img src="pics/044.jpg">
+						<img src="pics/045.jpg">
+						<img src="pics/055.jpg">
+						<img src="pics/095.jpg">
+						<img src="pics/103.jpg">
+						<img src="pics/110.jpg">
+					</div>
+				</div>
+			</article>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script>
+			(function() {
+
+				// detect if IE : from http://stackoverflow.com/a/16657946		
+				var ie = (function(){
+					var undef,rv = -1; // Return value assumes failure.
+					var ua = window.navigator.userAgent;
+					var msie = ua.indexOf('MSIE ');
+					var trident = ua.indexOf('Trident/');
+
+					if (msie > 0) {
+						// IE 10 or older => return version number
+						rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+					} else if (trident > 0) {
+						// IE 11 (or newer) => return version number
+						var rvNum = ua.indexOf('rv:');
+						rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
+					}
+
+					return ((rv > -1) ? rv : undef);
+				}());
+
+
+				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179					
+				// left: 37, up: 38, right: 39, down: 40,
+				// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+				var keys = [32, 37, 38, 39, 40], wheelIter = 0;
+
+				function preventDefault(e) {
+					e = e || window.event;
+					if (e.preventDefault)
+					e.preventDefault();
+					e.returnValue = false;  
+				}
+
+				function keydown(e) {
+					for (var i = keys.length; i--;) {
+						if (e.keyCode === keys[i]) {
+							preventDefault(e);
+							return;
+						}
+					}
+				}
+
+				function touchmove(e) {
+					preventDefault(e);
+				}
+
+				function wheel(e) {
+					// for IE 
+					//if( ie ) {
+						//preventDefault(e);
+					//}
+				}
+
+				function disable_scroll() {
+					window.onmousewheel = document.onmousewheel = wheel;
+					document.onkeydown = keydown;
+					document.body.ontouchmove = touchmove;
+				}
+
+				function enable_scroll() {
+					window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;  
+				}
+
+				var docElem = window.document.documentElement,
+					scrollVal,
+					isRevealed, 
+					noscroll, 
+					isAnimating,
+					container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
+
+				function scrollY() {
+					return window.pageYOffset || docElem.scrollTop;
+				}
+				
+				function scrollPage() {
+					scrollVal = scrollY();
+					
+					if( noscroll && !ie ) {
+						if( scrollVal < 0 ) return false;
+						// keep it that way
+						window.scrollTo( 0, 0 );
+					}
+
+					if( classie.has( container, 'notrans' ) ) {
+						classie.remove( container, 'notrans' );
+						return false;
+					}
+
+					if( isAnimating ) {
+						return false;
+					}
+					
+					if( scrollVal <= 0 && isRevealed ) {
+						toggle(0);
+					}
+					else if( scrollVal > 0 && !isRevealed ){
+						toggle(1);
+					}
+				}
+
+				function toggle( reveal ) {
+					isAnimating = true;
+					
+					if( reveal ) {
+						classie.add( container, 'modify' );
+					}
+					else {
+						noscroll = true;
+						disable_scroll();
+						classie.remove( container, 'modify' );
+					}
+
+					// simulating the end of the transition:
+					setTimeout( function() {
+						isRevealed = !isRevealed;
+						isAnimating = false;
+						if( reveal ) {
+							noscroll = false;
+							enable_scroll();
+						}
+					}, 600 );
+				}
+
+				// refreshing the page...
+				var pageScroll = scrollY();
+				noscroll = pageScroll === 0;
+				
+				disable_scroll();
+				
+				if( pageScroll ) {
+					isRevealed = true;
+					classie.add( container, 'notrans' );
+					classie.add( container, 'modify' );
+				}
+				
+				window.addEventListener( 'scroll', scrollPage );
+				trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+			})();
+		</script>
+	</body>
+</html>

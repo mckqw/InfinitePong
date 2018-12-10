@@ -1,0 +1,419 @@
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    -webkit-transition: .5s;
+    transition: .5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .sideNavBottom {
+	position: fixed;
+	bottom: 0;
+	height:8%;
+	width: 0;
+	margin: 0;
+	border-top: inset;
+    padding-top: 32px;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #111;
+    display: block;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sideNavBottom .closeLoginbtn {
+	position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+.CenterImg {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px; 
+}
+.center{
+    text-align:center;
+}
+.right{
+	margin-right:100px;
+	text-align:right;
+	font-weight: normal;
+	text-decoration: underline;
+}
+.right span select{
+	text-decoration: none;
+	margin-right:150px;
+}
+
+#About {
+	
+	transition: margin-left .5s;
+    padding: 16px;
+}
+
+#All{ 
+	-webkit-transition: 1s;
+    transition: 1s;
+}
+
+#body {
+	background: -webkit-radial-gradient(gray, white); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(gray, white); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(gray, white); /* For Fx 3.6 to 15 */
+    background: radial-gradient(gray, white); /* Standard syntax (must be last) */
+}
+
+#copyright{
+	font-size:11px;
+}
+
+#content iframe{
+    overflow:hidden;
+}
+
+#DivideBar{
+	transition: margin-left .5s;
+	white-space: nowrap;
+}
+
+#DivideBarContent{
+	height: 50px;
+	background-color: #131211;
+	padding-top: 5px;
+	display: block;
+}
+
+#list {
+	list-style: none;
+}
+
+#login {
+	-webkit-transition: height 0.8s;
+	-moz-transition: height 0.8s;
+	transition: height 0.8s;
+	position: absolute;
+    height: 0;
+    bottom: 0;
+	width: 250px;
+    padding-top: 32px;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #616161;
+    display: none;
+}
+
+/* #login .bNavInput{
+	margin-left: 20px;
+} */
+
+#login .bNavInputCenter{
+	text-align: center;
+	margin-left: 37%;
+}
+
+#login a{
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	padding-right: 20px;
+	text-align: center;
+}
+
+#loginError{
+	margin-left: 20px;
+}
+
+#Main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+#Pong{
+	width:75%;
+	height: 42%;
+}
+
+#space{
+	border: 5em;
+	font-size:12px;
+}
+
+#welcome{
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/*Code from: http://authenticstyle.co.uk/how-to-style-select-boxes-using-css-and-html/*/
+.select_style 
+{
+	background: #FFF;
+	overflow: hidden;
+	display: inline-block;
+	color: #525252;
+	font-weight: 300;
+	-webkit-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+	-moz-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+	border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+	-webkit-box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+	-moz-box-shadow: 0 0 5px rgba(123,123,123,.2);
+	box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+	border: solid 1px #DADADA;
+	font-family: "helvetica neue",arial;
+	position: relative;
+	cursor: pointer;
+	padding-right:20px;
+
+}
+.select_style span
+{
+	position: absolute;
+	right: 10px;
+	width: 8px;
+	height: 8px;
+	background: url(http://projects.authenticstyle.co.uk/niceselect/arrow.png) no-repeat;
+	top: 50%;
+	margin-top: -4px;
+}
+.select_style select
+{
+	-webkit-appearance: none;
+	appearance:none;
+	width:120%;
+	background:none;
+	background:transparent;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	padding:7px 10px;
+}
+
+/*https://codepen.io/imprakash/pen/GgNMXO*/
+
+.box {
+  text-align: center;
+  margin-left: 70%;
+  padding-bottom: 1em;
+}
+
+.error{
+	color: red;
+	font-size:18px;
+}
+
+.settingsButton {
+  font-size: 1em;
+  padding: 15px 25px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  background-image: url(thumbs_settings.png);
+  background-size: contain;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.tooltip{
+	background-image: url(thumbs_Info.png);
+	background-size: contain;
+	padding: 15px 25px;
+	display: inline;
+	position: relative;
+}
+		
+.tooltip:hover:after{
+	background: #333;
+	background: rgba(0,0,0,.8);
+	border-radius: 5px;
+	bottom: 26px;
+	color: #fff;
+	content: attr(data-tooltip);
+	left: 20%;
+	padding: 5px 15px;
+	position: absolute;
+	z-index: 98;
+	width: 220px;
+}
+
+.tooltip:hover:before{
+	border: solid;
+	border-color: #333 transparent;
+	border-width: 6px 6px 0 6px;
+	bottom: 20px;
+	content: "";
+	left: 50%;
+	position: absolute;
+	z-index: 99;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+#createText{
+	color: #FFFC38;
+	font-family: Roboto;
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+}
+
+#notUsr{
+	color: #FFFC38;
+	font-family: Roboto;
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+}
+
+h3 {
+	padding:0;
+	font-size: 30px;
+}
+h4 {
+	padding: 0;
+	margin: 5px;
+	margin-top: 10px;
+	font-style: italic;
+	font-size: 14px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+input[type="text"]:focus,
+input[type="text"].focus {
+  border-bottom: solid 2px #969696;
+}
+
+input[type="password"] {
+  padding: 5px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+input[type="password"]:focus,
+input[type="password"].focus {
+  border-bottom: solid 2px #969696;
+}
+
+p {
+	font-weight: bold;
+	font-family: FUTURA;
+	text-align: center;
+}
+section{
+	margin: auto;
+    padding: 10px;
+}
+
+

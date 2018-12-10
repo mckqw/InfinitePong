@@ -1,0 +1,16 @@
+<?xml version = "1.0"?>
+<users>
+	<usr name="matt" pass="1234">
+	usr1
+		<score type="array" id="R">
+			<value></value>
+			<value></value>
+			<value></value>
+		</score>
+		<score type="array" id="L">
+			<value></value>
+			<value></value>
+			<value></value>
+		</score>
+	</usr>
+</users>

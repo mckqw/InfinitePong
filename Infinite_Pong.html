@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <link rel="stylesheet" type="text/css" href="Infinite_Pong.css" />
+    <title>Infinate Pong</title>
+	<script type="text/javascript" src="Main.js"></script>
+	<script type="text/javascript" src="Graphics.js"></script>
+  </head>
+<body id="body">
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#javascript:void(0)" id="main" onclick="openItem(Main)">Main</a>
+  <a href="#javascript:void(0)" id="about" onclick="openItem(About)">About the Author</a>
+</div>
+
+<div id="all" class="All">
+	<ol id="list">	
+		<li><div id="Main">
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+			<h1>Infinite Pong</h1>
+			<div>
+			<?php echo $message; ?>
+			<section>
+				<div class="box">
+					<a href="#" data-tooltip="------------Controls------------
+									   W/S keys for Left Paddle
+									   Up/Down keys for Right Paddle
+									   Space bar/Mouse Click to Start"
+									   class="tooltip"></a>
+					<a class="settingsButton" href="#popup1"></a>
+				</div>
+				<div>
+				<canvas id="Pong">
+					Oops ... your browser doesn't support the HTML5 canvas element
+				</canvas>
+			</section>
+				<div id="popup1" class="overlay">
+					<div class="popup">
+						<a class="close" href="#">&times;</a>
+						<div class="content">
+							<h1>In-Game Settings</h1>
+				<hr />
+				<br /><br />
+				<div class="right">
+					<p class="right">Change the Speed of the ball:</p>
+					<span>
+						<input id="BallSpeedSlider" name="BallSpeedSlider" 
+							type="range" min="1" max="10" step="1" value="1" oninput="BallSpeedBox.value=BallSpeedSlider.value"/>
+						<input id="BallSpeedBox" name="BallSpeedBox" type="text" value="1" maxlength="2" size="4" readonly/>
+					</span>
+				</div>
+					<br /><br />
+					<div class="right">
+						<p class="right">Change the Color of the Shapes:</p>
+						<div class="select_style">
+							<select id="ShapeColorMenu" name="ShapeColorMenu">
+								<option value="0" id="startSelect">White</option>
+								<option value="1">Red</option>
+								<option value="2">Green</option>
+								<option value="3">Blue</option>
+								<option value="4">Yellow</option>
+								<option value="5">Magenta</option>
+								<option value="6">Cyan</option>
+							</select>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div id="popup2" class="overlay">
+				<div class="popup">
+					<a class="close" href="#">&times;</a>
+					<div class="content center">
+					<h1>Type in a Username</h1>
+						<input id="createusr" type="text" name="inputText"/>
+						 <textarea id="data">Enter some content here you want to save as a file</textarea>
+						<input type="submit" name="SubmitButton" onclick="save()"/>
+					</div>
+				</div>
+			</div>
+			</div>
+			<p><i>A game that you've never<br>ponged Before!</i></p>
+		</div></li>
+
+		<li><div id="About">
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+			<div id="content">
+				<iframe src="http://LocalHost/Infinite_Pong/ArticleIntroEffects/ArticleIntroEffects/index5.html"name="frame2" 
+				id="iframe" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" onload="" allowtransparency="false"></iframe>
+			</div>
+		</div></li>
+		
+
+		<li><div id="DivideBar">
+			<div id="DivideBarContent"></div>
+				<p id="copyright">© Copyright 2016 Hidden Leaf LLC, All Rights Reserved</p>
+			</div>
+		</li>
+	</ol>
+
+</div>
+</body>
+</html>
+<!-- 
+Things to Add:
+
+	-Top Score tab with username
+   Y-cookie stores usrs info:
+		-top score
+		-settings
+		-username
+	-Game Over info with score
+   Y-slideshow in about me(photos)
+   Y-icons for settings and help
+	-credits page
+   N-AI
+   N-8 bit font
+   N-minute shadow around the canvas and header
+	
+ -->
